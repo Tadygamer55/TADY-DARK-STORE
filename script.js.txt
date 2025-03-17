@@ -1,0 +1,10 @@
+// Particle Effect Simulation
+document.addEventListener('mousemove', (e) => {
+    const particles = document.createElement('span');
+    particles.className = 'particle';
+    particles.style.left = `${e.clientX}px`;
+    particles.style.top = `${e.clientY}px`;
+    document.body.appendChild(particles);
+
+    setTimeout(() => particles.remove(), 1000);
+});

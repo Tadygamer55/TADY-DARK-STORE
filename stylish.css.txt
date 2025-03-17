@@ -1,0 +1,72 @@
+/* Dark Theme and Basic Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: #0d0d0d;
+    scroll-behavior: smooth;
+}
+
+/* Glowing Text Animation */
+.glow-text {
+    text-align: center;
+    font-size: 50px;
+    color: #0ff;
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 5px #0ff; }
+    to { text-shadow: 0 0 20px #0ff; }
+}
+
+/* Section Styling */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Holographic Button */
+.holo-button {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background: rgba(0, 255, 255, 0.2);
+    border: 2px solid #0ff;
+    color: #0ff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.2s;
+}
+.holo-button:hover {
+    background: #0ff;
+    color: #000;
+    text-shadow: 0 0 5px #000;
+}
+
+/* Project Card */
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #0ff;
+    padding: 20px;
+    margin: 10px auto;
+    width: 90%;
+    max-width: 400px;
+    transition: transform 0.2s;
+}
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Animated Background */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgba(0, 255, 255, 0.1), #000);
+    z-index: -1;
+}
